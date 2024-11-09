@@ -35,14 +35,40 @@ export function ProductContent() {
     <section className="py-8 px-8 lg:py-20">
       <Tabs value="Electronics" className="mb-8">
         <div className="w-full flex mb-8 flex-col items-center">
-          <TabsHeader className="h-12 w-72 md:w-96">
-            <Tab style={{color:"orange"}} value="Electronics" className="font-medium">
+          <TabsHeader
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+            className="h-12 w-72 md:w-96"
+          >
+            <Tab
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              style={{ color: "orange" }}
+              value="Electronics"
+              className="font-medium"
+            >
               Electronics
             </Tab>
-            <Tab style={{color:"orange"}} value="Fashion" className="font-medium">
+            <Tab
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              style={{ color: "orange" }}
+              value="Fashion"
+              className="font-medium"
+            >
               Fashion
             </Tab>
-            <Tab style={{color:"orange"}} value="Home Goods" className=" font-medium">
+            <Tab
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              style={{ color: "orange" }}
+              value="Home Goods"
+              className=" font-medium"
+            >
               Home Goods
             </Tab>
           </TabsHeader>

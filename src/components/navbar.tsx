@@ -20,10 +20,20 @@ interface NavItemProps {
   href?: string;
 }
 
+// Add interface for nav menu items
+interface NavMenuItem {
+  name: string;
+  icon: React.ForwardRefExoticComponent<React.SVGProps<SVGSVGElement>>;
+  href?: string; // Make href optional
+}
+
 function NavItem({ children, href }: NavItemProps) {
   return (
     <li>
       <Typography
+        placeholder=""
+        onPointerEnterCapture={() => {}}
+        onPointerLeaveCapture={() => {}}
         as="a"
         href={href || "#"}
         target={href ? "_blank" : "_self"}
@@ -36,23 +46,27 @@ function NavItem({ children, href }: NavItemProps) {
   );
 }
 
-// Updated NAV_MENU for business firm site
-const NAV_MENU = [
+// Updated NAV_MENU with proper typing
+const NAV_MENU: NavMenuItem[] = [
   {
     name: "Home",
     icon: RectangleStackIcon,
+    href: "/",
   },
   {
     name: "About Us",
     icon: UserCircleIcon,
+    href: "/about",
   },
   {
     name: "Services",
     icon: CommandLineIcon,
+    href: "/services",
   },
   {
     name: "Products",
     icon: Squares2X2Icon,
+    href: "/products",
   },
 ];
 
@@ -85,6 +99,9 @@ export function Navbar() {
 
   return (
     <MTNavbar
+      placeholder=""
+      onPointerEnterCapture={() => {}}
+      onPointerLeaveCapture={() => {}}
       shadow={false}
       fullWidth
       blurred={false}
@@ -93,6 +110,9 @@ export function Navbar() {
     >
       <div className="container mx-auto flex items-center justify-between">
         <Typography
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
           color={isScrolling ? "blue-gray" : "white"}
           className="text-lg font-bold"
           style={{ color: "orange" }}
@@ -112,11 +132,20 @@ export function Navbar() {
           ))}
         </ul>
         <div className="hidden items-center gap-4 lg:flex">
-          <Button color={isScrolling ? "gray" : "white"} variant="text">
+          <Button
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+            color={isScrolling ? "gray" : "white"}
+            variant="text"
+          >
             Contact Us
           </Button>
           <a href="#" target="_blank">
             <Button
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
               className="bg-blue-200"
               color={isScrolling ? "gray" : "white"}
             >
@@ -125,6 +154,9 @@ export function Navbar() {
           </a>
         </div>
         <IconButton
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
           variant="text"
           color={isScrolling ? "blue" : "white"}
           onClick={handleOpen}
@@ -142,15 +174,28 @@ export function Navbar() {
           <ul className="flex flex-col gap-4 text-gray-900">
             {NAV_MENU.map(({ name, icon: Icon, href }) => (
               <NavItem key={name} href={href}>
-                <Icon className=" text-blue-200 h-5 w-5" />
+                <Icon className="text-blue-200 h-5 w-5" />
                 {name}
               </NavItem>
             ))}
           </ul>
           <div className="mt-6 flex items-center gap-4">
-            <Button variant="text">Contact Us</Button>
+            <Button
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              variant="text"
+            >
+              Contact Us
+            </Button>
             <a href="#" target="_blank">
-              <Button color="gray" className="bg-blue-200">
+              <Button
+                placeholder=""
+                onPointerEnterCapture={() => {}}
+                onPointerLeaveCapture={() => {}}
+                color="gray"
+                className="bg-blue-200"
+              >
                 Shop Now
               </Button>
             </a>

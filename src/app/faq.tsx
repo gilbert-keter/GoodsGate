@@ -39,10 +39,20 @@ export function Faq() {
     <section className="py-8 px-8 lg:py-20">
       <div className="container mx-auto">
         <div className="text-center">
-          <Typography variant="h1" color="orange" className="mb-4">
+          <Typography
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+            variant="h1"
+            color="orange"
+            className="mb-4"
+          >
             Frequently Asked Questions
           </Typography>
           <Typography
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
             variant="lead"
             className="mx-auto mb-24 lg:w-3/5 !text-gray-500"
           >
@@ -55,15 +65,26 @@ export function Faq() {
         <div className="mx-auto lg:max-w-screen-lg lg:px-20">
           {FAQS.map(({ title, desc }, key) => (
             <Accordion
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
               key={key}
               open={open === key + 1}
               onClick={() => handleOpen(key + 1)}
             >
-              <AccordionHeader className="text-left text-blue-200 hover:text-blue-500">
+              <AccordionHeader
+                placeholder=""
+                onPointerEnterCapture={() => {}}
+                onPointerLeaveCapture={() => {}}
+                className="text-left text-blue-200 hover:text-blue-500"
+              >
                 {title}
               </AccordionHeader>
               <AccordionBody>
                 <Typography
+                  placeholder=""
+                  onPointerEnterCapture={() => {}}
+                  onPointerLeaveCapture={() => {}}
                   color="blue-gray"
                   className="font-normal text-gray-500"
                 >

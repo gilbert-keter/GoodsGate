@@ -9,12 +9,18 @@ export function Footer() {
       <div className="container flex flex-col mx-auto">
         <div className="flex !w-full py-10 mb-5 md:mb-20 flex-col justify-center !items-center bg-blue-200 max-w-6xl mx-auto rounded-2xl p-5 ">
           <Typography
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
             className="text-2xl md:text-3xl text-center font-bold "
             color="orange"
           >
             Join us today and enjoy exclusive offers!
           </Typography>
           <Typography
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
             color="white"
             className=" md:w-7/12 text-center my-3 !text-base"
           >
@@ -22,13 +28,22 @@ export function Footer() {
             business needs.
           </Typography>
           <div className="flex w-full md:w-fit gap-3 mt-2 flex-col md:flex-row">
-            <Button color="white" size="md">
+            <Button
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              color="white"
+              size="md"
+            >
               Shop Now
             </Button>
           </div>
         </div>
         <div className="flex flex-col md:flex-row items-center !justify-between">
           <Typography
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
             as="a"
             href="#"
             variant="h6"
@@ -41,6 +56,9 @@ export function Footer() {
             {LINKS.map((link, index) => (
               <li key={index}>
                 <Typography
+                  placeholder=""
+                  onPointerEnterCapture={() => {}}
+                  onPointerLeaveCapture={() => {}}
                   as="a"
                   href="#"
                   variant="small"
@@ -53,26 +71,64 @@ export function Footer() {
             ))}
           </ul>
           <div className="flex w-fit justify-center gap-2">
-            <IconButton size="sm" color="gray" variant="text">
+            <IconButton
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              size="sm"
+              color="gray"
+              variant="text"
+            >
               <i className="fa-brands fa-twitter text-lg" />
             </IconButton>
-            <IconButton size="sm" color="gray" variant="text">
+            <IconButton
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              size="sm"
+              color="gray"
+              variant="text"
+            >
               <i className="fa-brands fa-youtube text-lg" />
             </IconButton>
-            <IconButton size="sm" color="gray" variant="text">
+            <IconButton
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              size="sm"
+              color="gray"
+              variant="text"
+            >
               <i className="fa-brands fa-instagram text-lg" />
             </IconButton>
-            <IconButton size="sm" color="gray" variant="text">
+            <IconButton
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              size="sm"
+              color="gray"
+              variant="text"
+            >
               <i className="fa-brands fa-linkedin text-lg" />
             </IconButton>
           </div>
         </div>
         <Typography
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
           color="blue-gray"
           className="flex items-center justify-center text-center mt-12 font-normal !text-gray-700"
         >
-          &copy; {CURRENT_YEAR} Powered by {" "}
-          <small className=" ml-2" style={{fontSize:"20px", color: "orange" }}> GoodsGate</small>. All rights reserved.
+          &copy; {CURRENT_YEAR} Powered by{" "}
+          <small
+            className=" ml-2"
+            style={{ fontSize: "20px", color: "orange" }}
+          >
+            {" "}
+            GoodsGate
+          </small>
+          . All rights reserved.
         </Typography>
       </div>
     </footer>

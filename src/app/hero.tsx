@@ -9,13 +9,30 @@ function Hero() {
       <div className="absolute inset-0 h-full w-full bg-gray-900/60" />
       <div className="grid min-h-screen px-8">
         <div className="container relative z-10 my-auto mx-auto grid place-items-center text-center">
-          <Typography variant="h3" color="white" className="mb-2">
+          <Typography
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+            variant="h3"
+            color="white"
+            className="mb-2"
+          >
             Since 31 August 2020 @ Nairobi, Kenya
           </Typography>
-          <Typography variant="h1" color="white" className="lg:max-w-3xl">
+          <Typography
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+            variant="h1"
+            color="white"
+            className="lg:max-w-3xl"
+          >
             GoodsGate 2024: Revolutionizing E-commerce
           </Typography>
           <Typography
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
             variant="lead"
             color="white"
             className="mt-1 mb-12 w-full md:max-w-full lg:max-w-2xl"
@@ -24,10 +41,21 @@ function Hero() {
             2024!
           </Typography>
           <div className="flex items-center gap-4">
-            <Button variant="gradient" color="white">
+            <Button
+              variant="gradient"
+              color="white"
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+            >
               Start Shopping
             </Button>
-            <IconButton className="rounded-full bg-white p-6">
+            <IconButton
+              className="rounded-full bg-white p-6"
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+            >
               <PlayIcon className="h-4 w-4 text-gray-900" />
             </IconButton>
           </div>
